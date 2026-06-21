@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Insightify</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+    <button id="themeToggle">
+        🌙
+    </button>
+
+    <div class="container">
+
+        <div class="hero">
+
+            <h1>
+                Insightify
+            </h1>
+
+            <p class="hero-subtitle">
+                Transform YouTube lectures and study notes into
+                concise summaries, revision sheets, viva questions
+                and exam-ready insights.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>YouTube Lecture</h2>
+
+            <input type="text" id="youtubeUrl" placeholder="Paste YouTube Link">
+
+            <button onclick="summarizeYoutube()">
+                Analyze Lecture
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Notes Summarizer</h2>
+
+            <textarea id="notes" placeholder="Paste lecture notes here">
+</textarea>
+
+            <button onclick="summarizeNotes()">
+                Summarize Notes
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Output</h2>
+
+            <pre id="output">
+Results will appear here...
+</pre>
+
+        </div>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
